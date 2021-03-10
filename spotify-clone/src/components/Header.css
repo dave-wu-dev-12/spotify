@@ -61,8 +61,23 @@
   display: none;
 }
 
+/***********/
+/*Generics*/
+/***********/
 .margin_right_qtr {
   margin-right: 0.25em;
+}
+
+.pointer_curosr {
+  cursor: pointer;
+}
+
+.color_hover:hover {
+  color: lightgreen !important;
+}
+
+.no_color_hover:hover {
+  color: white !important;
 }
 
 /***********/

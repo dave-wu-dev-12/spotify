@@ -29,8 +29,8 @@ function Header() {
 
         {/* mobile header */}
         <div className="header_actions_mobile">
-          <div className="action_profile_container">
-            <AccountCircleIcon className="margin_right_qtr" />
+          <div className="action_profile_container no_color_hover">
+            <AccountCircleIcon className="margin_right_qtr color_hover" />
             <MenuIcon />
           </div>
         </div>
