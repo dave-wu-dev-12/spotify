@@ -56,3 +56,37 @@
   color: white !important;
   cursor: auto;
 }
+
+.header_actions_mobile {
+  display: none;
+}
+
+.margin_right_qtr {
+  margin-right: 0.25em;
+}
+
+/***********/
+/*Tablet and mobile queries*/
+/***********/
+@media (max-width: 768px) {
+  .header_outer_container {
+    background: black;
+  }
+
+  .header_container {
+    padding: 0.5em 1em;
+  }
+
+  .header_logo_image {
+    height: 29px;
+    width: 85px;
+  }
+
+  .header_actions_mobile {
+    display: flex;
+  }
+
+  .header_actions {
+    display: none;
+  }
+}
