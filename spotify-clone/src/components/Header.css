@@ -2,9 +2,7 @@
   background: rgba(10, 10, 10, 0.45);
   font-weight: 700;
   font-size: 15px;
-  position: fixed;
-  width: 100%;
-  box-sizing: border-box;
+  position: sticky;
 }
 
 .header_container {
