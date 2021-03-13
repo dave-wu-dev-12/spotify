@@ -147,6 +147,9 @@
   text-align: left;
 }
 
+/***********/
+/*Setting the relative pos here so i can animate the slide in right*/
+/***********/
 .pop_in_actionContainer p {
   position: relative;
 }
