@@ -56,22 +56,22 @@ function Header() {
             <MenuIcon onClick={() => setShowPopInNav(true)} />
             {/* mobile pop in nav  */}
             {showPopInNav && (
-              <div className="pop_in_container">
+              <div className="pop_in_container slideInRightMain">
                 <div className="pop_in_content_container">
                   <div className="pop_in_actionContainer">
-                    <p>Premium</p>
-                    <p>Support</p>
-                    <p>Download</p>
-                    <p className="horixontal_action_seperator no_color_hover">
+                    <p className="slideInRight">Premium</p>
+                    <p className="slideInRightSlow">Support</p>
+                    <p className="slideInRightSlower">Download</p>
+                    <p className="horixontal_action_seperator no_color_hover slideInRightSlowest">
                       --
                     </p>
                     <div className="pop_in_action_profile_container">
-                      <p>Account</p>
-                      <p>Log out</p>
+                      <p className="slideInRightSlowerer">Account</p>
+                      <p className="slideInRightSlowestest">Log out</p>
                     </div>
                   </div>
                   <img
-                    className="header_logo_image"
+                    className="header_logo_image slideInRightSlowestestest"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1200px-Spotify_logo_with_text.svg.png"
                     alt="logo.png"
                   />
@@ -80,7 +80,9 @@ function Header() {
               </div>
             )}
             {/* mobile overlay for pop in nav  */}
-            {showPopInNav && <div className="pop_in_overlay_container"></div>}
+            {showPopInNav && (
+              <div className="pop_in_overlay_container fadeIn"></div>
+            )}
             {/* mobile overlay for pop in nav  */}
 
             {/* mobile pop in nav  */}

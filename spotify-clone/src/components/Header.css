@@ -20,6 +20,7 @@
   height: 40px;
   object-fit: contain;
   cursor: pointer;
+  position: relative;
 }
 
 .header_actions {
@@ -146,8 +147,66 @@
   text-align: left;
 }
 
+.pop_in_actionContainer p {
+  position: relative;
+}
+
 .pop_in_actionContainer p:hover {
   color: lightgreen;
+}
+
+.slideInRightMain {
+  animation: fadeInAnimation 0.4s, slideInRightAnimation 0.4s;
+}
+
+.slideInRight {
+  animation: fadeInAnimation 0.8s, slideInRightAnimation 0.4s;
+}
+
+.slideInRightSlow {
+  animation: fadeInAnimation 0.8s, slideInRightAnimation 0.5s;
+}
+
+.slideInRightSlower {
+  animation: fadeInAnimation 0.8s, slideInRightAnimation 0.6s;
+}
+
+.slideInRightSlowest {
+  animation: fadeInAnimation 0.8s, slideInRightAnimation 0.7s;
+}
+
+.slideInRightSlowerer {
+  animation: fadeInAnimation 0.8s, slideInRightAnimation 0.8s;
+}
+
+.slideInRightSlowestest {
+  animation: fadeInAnimation 0.8s, slideInRightAnimation 0.9s;
+}
+
+.slideInRightSlowestestest {
+  animation: fadeInAnimation 0.8s, slideInRightAnimation 1s;
+}
+
+.fadeIn {
+  animation: fadeInAnimation 0.4s;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightAnimation {
+  from {
+    right: -50px;
+  }
+  to {
+    right: 0;
+  }
 }
 
 /***********/
