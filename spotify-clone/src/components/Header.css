@@ -3,6 +3,7 @@
   font-weight: 700;
   font-size: 15px;
   position: sticky;
+  top: 0;
 }
 
 .header_container {
@@ -24,6 +25,7 @@
 .header_actions {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header_actions p {
@@ -53,6 +55,32 @@
 .action_seperator:hover {
   color: white !important;
   cursor: auto;
+}
+
+.dropdown_action_profile_container {
+  position: absolute;
+  top: 50px;
+  right: -15px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  width: 150px;
+  text-align: left;
+}
+
+.arrow_up {
+  position: absolute;
+  top: -10px;
+  right: 17px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+.dropdown_logout_text {
+  color: rgba(10, 10, 10, 0.45);
 }
 
 .header_actions_mobile {

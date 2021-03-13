@@ -4,9 +4,18 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
 function Header() {
   const [showPopInNav, setShowPopInNav] = useState(false);
+  const [showDropDownInNav, setShowDropDownInNav] = useState(false);
+
+  let dropdownArrowHandler = null;
+  dropdownArrowHandler = showDropDownInNav ? (
+    <KeyboardArrowUpIcon />
+  ) : (
+    <KeyboardArrowDownIcon />
+  );
 
   return (
     <div className="header_outer_container">
@@ -22,11 +31,21 @@ function Header() {
           <p>Support</p>
           <p>Download</p>
           <p className="action_seperator">|</p>
-          <div className="action_profile_container">
+          <div
+            className="action_profile_container"
+            onClick={() => setShowDropDownInNav(!showDropDownInNav)}
+          >
             <AccountCircleIcon />
             <p>Profile</p>
-            <KeyboardArrowDownIcon />
+            {dropdownArrowHandler}
           </div>
+          {showDropDownInNav && (
+            <div className="dropdown_action_profile_container">
+              <p>Account</p>
+              <p className="dropdown_logout_text">Log out</p>
+              <div className="arrow_up"></div>
+            </div>
+          )}
         </div>
         {/* desktop header */}
 
