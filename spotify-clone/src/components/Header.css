@@ -190,8 +190,25 @@
   animation: fadeInAnimation 0.8s, slideInRightAnimation 1s;
 }
 
+.slideOutRightMain {
+  animation: fadeOutAnimation 0.4s, slideOutRightAnimation 0.4s;
+}
+
 .fadeIn {
   animation: fadeInAnimation 0.4s;
+}
+
+.fadeOut {
+  animation: fadeOutAnimation 0.4s;
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fadeInAnimation {
@@ -209,6 +226,15 @@
   }
   to {
     right: 0;
+  }
+}
+
+@keyframes slideOutRightAnimation {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -50px;
   }
 }
 

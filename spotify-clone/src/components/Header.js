@@ -9,6 +9,27 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 function Header() {
   const [showPopInNav, setShowPopInNav] = useState(false);
   const [showDropDownInNav, setShowDropDownInNav] = useState(false);
+  const [
+    showClosePopInNavAnimations,
+    setShowClosePopInNavAnimations,
+  ] = useState(false);
+
+  const closePopInNav = () => {
+    // apply close classes
+    setShowClosePopInNavAnimations(true);
+
+    // once animations finish remove section
+    // set the time here to be 100ms shorter than the actual animation to avoid animation and dispaly removal collision aka last second flashing
+    setTimeout(() => {
+      setShowPopInNav(false);
+    }, 300);
+  };
+
+  const beginShowPopInNav = () => {
+    // remove close classes
+    setShowClosePopInNavAnimations(false);
+    setShowPopInNav(true);
+  };
 
   let dropdownArrowHandler = null;
   dropdownArrowHandler = showDropDownInNav ? (
@@ -53,10 +74,17 @@ function Header() {
         <div className="header_actions_mobile">
           <div className="action_profile_container no_color_hover">
             <AccountCircleIcon className="margin_right_qtr color_hover" />
-            <MenuIcon onClick={() => setShowPopInNav(true)} />
+            <MenuIcon onClick={beginShowPopInNav} />
             {/* mobile pop in nav  */}
             {showPopInNav && (
-              <div className="pop_in_container slideInRightMain">
+              <div
+                className={
+                  "pop_in_container " +
+                  (showClosePopInNavAnimations
+                    ? "slideOutRightMain"
+                    : "slideInRightMain")
+                }
+              >
                 <div className="pop_in_content_container">
                   <div className="pop_in_actionContainer">
                     <p className="slideInRight">Premium</p>
@@ -76,12 +104,17 @@ function Header() {
                     alt="logo.png"
                   />
                 </div>
-                <CloseIcon onClick={() => setShowPopInNav(false)} />
+                <CloseIcon onClick={closePopInNav} />
               </div>
             )}
             {/* mobile overlay for pop in nav  */}
             {showPopInNav && (
-              <div className="pop_in_overlay_container fadeIn"></div>
+              <div
+                className={
+                  "pop_in_overlay_container " +
+                  (showClosePopInNavAnimations ? "fadeOut" : "fadeIn")
+                }
+              ></div>
             )}
             {/* mobile overlay for pop in nav  */}
 
