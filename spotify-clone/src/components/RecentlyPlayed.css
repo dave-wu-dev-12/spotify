@@ -1,0 +1,89 @@
+.recentlyPlayed_outerContainer {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(117, 35, 117),
+    rgb(153, 153, 206)
+  );
+  padding-top: 70px;
+  z-index: 1;
+}
+
+.banner__fade {
+  height: 70px;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+  width: 100%;
+}
+
+.recentlyPlayed_contentContainer {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.recentlyPlayed_playerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.jumpBackIn_container {
+  padding: 1em;
+  flex: 1;
+  text-align: left;
+}
+
+.webPlayer_button {
+  background-color: rgb(53, 211, 53);
+  border-radius: 30px;
+  padding: 0.75em 0;
+  font-size: 12px;
+  border: none;
+  outline-style: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 175px;
+  margin-top: 1em;
+}
+
+.webPlayer_button:hover {
+  background-color: rgb(74, 235, 74);
+  cursor: pointer;
+}
+
+.playlistGrid_Container {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 446px;
+}
+
+.playlistGrid_Container img {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.playlistAlbumContainer {
+  position: relative;
+  margin: 0.25em;
+}
+
+.albumOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(10, 10, 10, 0.45);
+  width: 125px;
+  height: 125px;
+  opacity: 0;
+}
+
+.albumOverlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
