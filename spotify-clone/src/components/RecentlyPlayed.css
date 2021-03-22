@@ -59,6 +59,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 446px;
+  justify-content: center;
 }
 
 .playlistGrid_Container img {
@@ -120,5 +121,18 @@
   }
   50% {
     bottom: -34px;
+  }
+}
+
+/***********/
+/*Tablet and mobile queries*/
+/***********/
+@media (max-width: 768px) {
+  .recentlyPlayed_playerContainer {
+    flex-direction: column;
+  }
+  .jumpBackIn_container {
+    text-align: center;
+    padding-top: 0px;
   }
 }
