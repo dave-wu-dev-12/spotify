@@ -70,20 +70,55 @@
 
 .playlistAlbumContainer {
   position: relative;
-  margin: 0.25em;
+  margin: 0.25em 0.45em;
 }
 
 .albumOverlay {
   position: absolute;
   top: 0;
   right: 0;
-  background: rgba(10, 10, 10, 0.45);
+  background: rgba(10, 10, 10, 0.65);
   width: 125px;
   height: 125px;
   opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 0.55em;
 }
 
 .albumOverlay:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.albumOverlay_title {
+  font-size: 0.45em !important;
+  color: rgb(161, 161, 161);
+}
+
+.albumOverlay_artistName {
+  margin: 0.5em 0;
+}
+
+.recentlyPlayed_nextContianer {
+  position: relative;
+}
+
+.hoverInfinite {
+  position: relative;
+  animation: hoverUpDown 2s linear infinite;
+}
+
+@keyframes hoverUpDown {
+  0%,
+  100% {
+    bottom: -30px;
+  }
+  50% {
+    bottom: -34px;
+  }
 }
