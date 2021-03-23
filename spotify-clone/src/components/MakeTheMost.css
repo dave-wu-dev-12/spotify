@@ -1,0 +1,47 @@
+.makeTheMost_Container {
+  background-color: white;
+  color: black;
+  padding: 3em 0;
+}
+
+.makeTheMost_ContentContainer {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 2em;
+}
+
+.makeTheMost_Header {
+  padding: 0 0.45em;
+}
+
+.makeTheMost_DetailTextContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.makeTheMost_DetailTextContainer p {
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.makeTheMost_DetailText {
+  max-width: 300px;
+  padding: 0 1em;
+}
+
+.makeTheMost_actionText {
+  color: lightgreen;
+  font-weight: 900 !important;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .makeTheMost_DetailText {
+    max-width: 600px;
+    padding: 0 1em;
+  }
+}

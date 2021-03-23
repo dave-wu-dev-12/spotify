@@ -12,11 +12,11 @@ function LandingPage() {
       {/* header */}
       <Header />
       {/* recently played */}
-      <LatestTrends />
-      {/* latest trend */}
-      <MakeTheMost />
-      {/* make the most */}
       <RecentlyPlayed />
+      {/* latest trend */}
+      <LatestTrends />
+      {/* make the most */}
+      <MakeTheMost />
       {/* footer */}
       <Footer />
     </div>
