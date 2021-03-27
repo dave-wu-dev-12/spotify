@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 function LandingPage() {
   return (
-    <div>
+    <div className="landingPage_container">
       {/* header */}
       <Header />
       {/* recently played */}

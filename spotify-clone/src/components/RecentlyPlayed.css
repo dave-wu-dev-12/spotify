@@ -6,6 +6,11 @@
   );
   padding-top: 70px;
   z-index: 1;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 500px;
 }
 
 .banner__fade {

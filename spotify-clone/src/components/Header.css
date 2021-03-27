@@ -37,7 +37,7 @@
 }
 
 .header_actions p:hover {
-  color: lightgreen;
+  color: limegreen;
 }
 
 .action_profile_container {
@@ -47,7 +47,7 @@
 }
 
 .action_profile_container:hover {
-  color: lightgreen;
+  color: limegreen;
 }
 
 .action_seperator {
@@ -102,7 +102,7 @@
 }
 
 .color_hover:hover {
-  color: lightgreen !important;
+  color: limegreen !important;
 }
 
 .no_color_hover:hover {
