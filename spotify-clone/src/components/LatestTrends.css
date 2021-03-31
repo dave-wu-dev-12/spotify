@@ -1,0 +1,133 @@
+.albumContainer img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.contentOuterContainer {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(36, 35, 117),
+    rgb(153, 180, 206)
+  );
+  flex: 2;
+  max-height: 700px;
+}
+
+.contentInnerContainer {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.latestTrendContainer {
+  padding-bottom: 3em;
+}
+
+.albumRow {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 4em;
+}
+
+.albumContainer {
+  display: flex;
+  background: rgba(255, 252, 252, 0.1);
+  padding: 0.5em;
+  border-radius: 5px;
+  position: relative;
+  min-width: 310px;
+  min-height: 150px;
+}
+
+.albumInfo {
+  margin-right: 1em;
+  text-align: left;
+}
+
+.albumContainer img {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+.albumInfoMiniHeader {
+  font-size: 10px;
+  font-weight: bolder;
+  background: rgba(44, 43, 43, 0.3);
+  padding: 0.5em 1.5em;
+  position: absolute;
+  left: -10px;
+}
+
+.albumInfoMiniTitle {
+  background: rgba(9, 9, 110, 0.52);
+  padding: 0.5em 1.5em;
+  position: absolute;
+  left: -20px;
+  top: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.albumInfoMiniPlayNow {
+  position: absolute;
+  left: 10px;
+  bottom: 40px;
+  color: limegreen;
+  text-transform: uppercase;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+/***********/
+/*Tablet and mobile queries*/
+/***********/
+@media (max-width: 968px) {
+  .contentOuterContainer {
+    max-height: none;
+  }
+
+  .latestTrendingHeader {
+    margin-bottom: 10em;
+  }
+
+  .albumRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .albumContainer {
+    margin: 2em 0;
+    min-height: 45vw;
+    min-width: 60vw;
+    margin-bottom: 12em;
+  }
+
+  .albumContainer img,
+  .albumInfoMiniHeader,
+  .albumInfoMiniTitle,
+  .albumInfoMiniPlayNow {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .albumContainer img {
+    position: absolute;
+    top: -80px;
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .albumInfoMiniHeader {
+    width: 50%;
+    top: -120px;
+  }
+
+  .albumInfoMiniTitle {
+    top: auto;
+    bottom: 60px;
+  }
+}
