@@ -11,7 +11,10 @@ function RecentlyPlayed() {
         <div className="recentlyPlayed_playerContainer">
           <div className="jumpBackIn_container">
             <p>Recently Played</p>
-            <h1>Jump back in</h1>
+            <div className="jumpBackInContainer">
+              <h1 className="jumpBackInText">Jump back in</h1>
+              <div className="jumpBackInBottomBorder"></div>
+            </div>
             <h5>Pick up your music right where you left off.</h5>
             <button className="webPlayer_button">Open Web player</button>
           </div>
