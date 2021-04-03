@@ -3,6 +3,7 @@ import "./RecentlyPlayed.css";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import ImgAssets from "../assets/ImgAssets";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
+import { Link } from "react-router-dom";
 
 function RecentlyPlayed() {
   return (
@@ -16,7 +17,9 @@ function RecentlyPlayed() {
               <div className="jumpBackInBottomBorder"></div>
             </div>
             <h5>Pick up your music right where you left off.</h5>
-            <button className="webPlayer_button">Open Web player</button>
+            <Link to={"/Playlist"}>
+              <button className="webPlayer_button">Open Web player</button>
+            </Link>
           </div>
           <div className="playlistGrid_Container">
             <div className="playlistAlbumContainer">
