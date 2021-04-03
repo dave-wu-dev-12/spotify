@@ -1,0 +1,79 @@
+.playbarContainer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  min-width: 1350px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.playbarSongInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.playbarSongInfo img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.songInfoContainer {
+  margin: 0 1em;
+  text-align: left;
+}
+
+.playbarControls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playBarActionsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playBarIcon {
+  margin: 0 1em;
+}
+
+.playBarTimeStampContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playBarTimeStampTracker {
+  width: 600px;
+  background-color: grey;
+  height: 10px;
+  margin: 0 1em;
+}
+
+.playbarSettings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.volumeBar {
+  min-width: 20px;
+  width: 30%;
+  max-width: 80px;
+  background-color: grey;
+  height: 10px;
+}
+
+.settingsIcon {
+  margin: 0 0.5em;
+}
