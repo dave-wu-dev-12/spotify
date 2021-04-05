@@ -17,6 +17,8 @@ const ImgAssets = {
     "https://cdn1.iconfinder.com/data/icons/social-media-outline-6/128/SocialMedia_Instagram-Outline-512.png",
   twitterIcon: "https://image.flaticon.com/icons/png/512/23/23931.png",
   facebookIcon: "https://img.icons8.com/ios/452/facebook-new.png",
+  spotifyIcon:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1200px-Spotify_logo_with_text.svg.png",
 };
 
 export default ImgAssets;

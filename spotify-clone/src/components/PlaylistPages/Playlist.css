@@ -1,0 +1,22 @@
+.playlistContainer {
+  display: flex;
+  height: 85%;
+}
+
+.playlistNavigationContainer {
+  text-align: left;
+  padding: 1em;
+  width: 20vw;
+  background-color: black;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.playlistControlItem {
+  display: flex;
+  align-items: center;
+}
+
+.playlistControlItem h3 {
+  margin-left: 1em;
+}

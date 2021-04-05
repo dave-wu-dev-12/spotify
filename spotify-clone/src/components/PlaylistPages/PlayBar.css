@@ -5,10 +5,10 @@
   align-items: center;
   padding: 1em;
   min-width: 1350px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   box-sizing: border-box;
+  height: 15%;
+  min-height: 120px;
+  overflow: hidden;
 }
 
 .playbarSongInfo {
