@@ -1,6 +1,7 @@
 .playlistContainer {
   display: flex;
-  height: 85%;
+  min-height: 85%;
+  height: 99%;
 }
 
 .playlistNavigationContainer {
@@ -9,6 +10,18 @@
   width: 20vw;
   background-color: black;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.playlistControlsContainer {
+  height: 20%;
+  max-height: 360px;
+}
+
+.playlistListContainer {
+  height: 75%;
   overflow-y: scroll;
 }
 
@@ -19,4 +32,51 @@
 
 .playlistControlItem h3 {
   margin-left: 1em;
+}
+
+.playlistSongDisplayContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  background-color: black;
+}
+
+.playlistSongHeader {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.playlistUserInfoContainer {
+  background-color: rgb(95, 95, 95);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.playlistUserName {
+  margin: 0 0.5em;
+}
+
+.popoutPLaylistUserInfoContainer {
+  position: absolute;
+  background-color: rgb(95, 95, 95);
+  padding: 1em;
+  border-radius: 5px;
+  right: 17px;
+  top: 50px;
+  font-size: 12px;
+  width: 150px;
+  text-align: left;
+}
+
+.accountItemInPopout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
