@@ -12,6 +12,7 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
+import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 
 function Playlist() {
   const [accountPopOut, setAccountPopOut] = useState(false);
@@ -166,8 +167,54 @@ function Playlist() {
             </div>
           )}
         </div>
-        <div className="welcomeContainer"></div>
-        <div className="playlistSongSectionContianer"></div>
+        <div className="playlistbodyContentContainer">
+          <div className="welcomeContainer">
+            <h3>Good evening</h3>
+            <div className="playlistItemListContainer">
+              <div className="playlistItemContainer">
+                <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                <p>Le Classico</p>
+                <PlayCircleFilledIcon className="playAlbumIcon"></PlayCircleFilledIcon>
+              </div>
+              <div className="playlistItemContainer">
+                <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                <p>Le Classico 2: classics now</p>
+                <PlayCircleFilledIcon className="playAlbumIcon"></PlayCircleFilledIcon>
+              </div>
+              <div className="playlistItemContainer">
+                <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                <p>Le Classico 3 : return of dante</p>
+                <PlayCircleFilledIcon className="playAlbumIcon"></PlayCircleFilledIcon>
+              </div>
+              <div className="playlistItemContainer">
+                <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                <p>Le Classico 4: end is nigh</p>
+                <PlayCircleFilledIcon className="playAlbumIcon"></PlayCircleFilledIcon>
+              </div>
+              <div className="playlistItemContainer">
+                <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                <p>Le Classico 4: end is nigh</p>
+                <PlayCircleFilledIcon className="playAlbumIcon"></PlayCircleFilledIcon>
+              </div>
+              <div className="playlistItemContainer">
+                <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                <p>Le Classico 4: end is nigh</p>
+                <PlayCircleFilledIcon className="playAlbumIcon"></PlayCircleFilledIcon>
+              </div>
+              <div className="playlistItemContainer">
+                <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                <p>Le Classico 4: end is nigh</p>
+                <PlayCircleFilledIcon className="playAlbumIcon"></PlayCircleFilledIcon>
+              </div>
+              <div className="playlistItemContainer">
+                <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                <p>Le Classico 4: end is nigh</p>
+                <PlayCircleFilledIcon className="playAlbumIcon"></PlayCircleFilledIcon>
+              </div>
+            </div>
+          </div>
+          <div className="playlistSongSectionContianer"></div>
+        </div>
       </div>
     </div>
   );
