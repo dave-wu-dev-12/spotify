@@ -133,3 +133,46 @@
 .playlistItemContainer:hover .playAlbumIcon {
   opacity: 1;
 }
+
+.playlistSongSectionContianer {
+  text-align: left;
+}
+
+.albumCardImageContainer img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+
+.albumCardImageContainer {
+  position: relative;
+}
+
+.albumCardIcon {
+  font-size: 2.5em !important;
+  color: limegreen;
+  opacity: 0;
+  bottom: 40px;
+  right: 20px;
+  position: absolute;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.albumCardContainer:hover .albumCardIcon {
+  opacity: 1;
+}
+
+.albumCardContainer {
+  margin-right: 1em;
+  border-radius: 10px;
+}
+
+.albumCardContainer:hover {
+  background-color: rgba(132, 130, 130, 0.493);
+}
+
+.albumCardListContainer {
+  display: flex;
+}

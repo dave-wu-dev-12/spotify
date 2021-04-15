@@ -213,7 +213,180 @@ function Playlist() {
               </div>
             </div>
           </div>
-          <div className="playlistSongSectionContianer"></div>
+          <div className="playlistSongSectionContianer">
+            <h3>Recently Played</h3>
+            <div className="albumCardListContainer">
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+            </div>
+          </div>
+          <div className="playlistSongSectionContianer">
+            <h3>Recently Played</h3>
+            <div className="albumCardListContainer">
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+            </div>
+          </div>
+          <div className="playlistSongSectionContianer">
+            <h3>Recently Played</h3>
+            <div className="albumCardListContainer">
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+            </div>
+          </div>
+          <div className="playlistSongSectionContianer">
+            <h3>Recently Played</h3>
+            <div className="albumCardListContainer">
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+            </div>
+          </div>
+          <div className="playlistSongSectionContianer">
+            <h3>Recently Played</h3>
+            <div className="albumCardListContainer">
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+            </div>
+          </div>
+          <div className="playlistSongSectionContianer">
+            <h3>Recently Played</h3>
+            <div className="albumCardListContainer">
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+              <div className="albumCardContainer">
+                <div className="albumCardImageContainer">
+                  <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
+                  <PlayCircleFilledIcon className="albumCardIcon"></PlayCircleFilledIcon>
+                </div>
+                <h5>FUN playlist</h5>
+                <p>The hellos</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
