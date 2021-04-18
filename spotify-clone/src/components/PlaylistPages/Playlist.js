@@ -153,7 +153,7 @@ function Playlist() {
             onClick={() => setAccountPopOut(!accountPopOut)}
           >
             <PermIdentityIcon />
-            <h5 className="playlistUserName">DIRKY </h5>
+            <h5 className="playlistUserName">Jacky </h5>
             {accountPopOut ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
           </div>
           {accountPopOut && (

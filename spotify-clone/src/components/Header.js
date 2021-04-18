@@ -57,7 +57,7 @@ function Header() {
             onClick={() => setShowDropDownInNav(!showDropDownInNav)}
           >
             <AccountCircleIcon />
-            <p>Profile</p>
+            <p>Jacky's Profile</p>
             {dropdownArrowHandler}
           </div>
           {showDropDownInNav && (
