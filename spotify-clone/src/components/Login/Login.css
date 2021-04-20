@@ -25,6 +25,7 @@
   background-color: transparent;
   border-bottom: 1px solid white;
   outline-style: none;
+  caret-color: white;
 }
 
 .loginButton {

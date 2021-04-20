@@ -6,11 +6,11 @@ import MakeTheMost from "../components/MakeTheMost";
 import RecentlyPlayed from "../components/RecentlyPlayed";
 import Footer from "../components/Footer";
 
-function LandingPage() {
+function LandingPage({ loggedInUserName, userLogout }) {
   return (
     <div className="landingPage_container">
       {/* header */}
-      <Header />
+      <Header loggedInUserName={loggedInUserName} userLogout={userLogout} />
       {/* recently played */}
       <RecentlyPlayed />
       {/* latest trend */}

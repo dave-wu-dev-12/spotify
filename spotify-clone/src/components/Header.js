@@ -6,7 +6,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
-function Header() {
+function Header({ loggedInUserName, userLogout }) {
   const [showPopInNav, setShowPopInNav] = useState(false);
   const [showDropDownInNav, setShowDropDownInNav] = useState(false);
   const [
@@ -57,13 +57,15 @@ function Header() {
             onClick={() => setShowDropDownInNav(!showDropDownInNav)}
           >
             <AccountCircleIcon />
-            <p>Jacky's Profile</p>
+            <p>{loggedInUserName} Profile</p>
             {dropdownArrowHandler}
           </div>
           {showDropDownInNav && (
             <div className="dropdown_action_profile_container">
               <p>Account</p>
-              <p className="dropdown_logout_text">Log out</p>
+              <p className="dropdown_logout_text" onClick={userLogout}>
+                Log out
+              </p>
               <div className="arrow_up"></div>
             </div>
           )}

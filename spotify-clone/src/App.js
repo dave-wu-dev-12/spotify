@@ -10,13 +10,32 @@ import {
 } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import { useEffect } from "react";
 
 function App() {
-  const isLoggedIn = useSelector((state) => state.isLoggedIn);
   const dispatch = useDispatch();
 
-  const loginUserSuccess = () => {
-    dispatch({ type: "login_user_success" });
+  const isLoggedIn = useSelector((state) => state.isLoggedIn);
+  const loggedInUserName = useSelector((state) => state.userName);
+
+  useEffect(() => {
+    console.log(`a render has occurred`);
+  });
+
+  useEffect(() => {
+    console.log(`loggedIn value is: ${isLoggedIn}`);
+  }, [isLoggedIn]);
+
+  useEffect(() => {
+    console.log(`loggedInUserName value is: ${loggedInUserName}`);
+  }, [loggedInUserName]);
+
+  const loginUserSuccess = (userName) => {
+    dispatch({ type: "login_user_success", userName: userName });
+  };
+
+  const userLogout = () => {
+    dispatch({ type: "logout_user" });
   };
 
   return (
@@ -26,11 +45,17 @@ function App() {
           <Switch>
             <Route exact path="/playlist">
               {/* playlist page */}
-              <PlaylistLandingPage />
+              <PlaylistLandingPage
+                loggedInUserName={loggedInUserName}
+                userLogout={userLogout}
+              />
             </Route>
             <Route exact path="/">
               {/* landing page */}
-              <LandingPage />
+              <LandingPage
+                loggedInUserName={loggedInUserName}
+                userLogout={userLogout}
+              />
             </Route>
             <Redirect to="/" />
           </Switch>

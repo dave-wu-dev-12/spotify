@@ -14,7 +14,7 @@ import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 
-function Playlist() {
+function Playlist({ loggedInUserName, userLogout }) {
   const [accountPopOut, setAccountPopOut] = useState(false);
 
   return (
@@ -153,7 +153,7 @@ function Playlist() {
             onClick={() => setAccountPopOut(!accountPopOut)}
           >
             <PermIdentityIcon />
-            <h5 className="playlistUserName">Jacky </h5>
+            <h5 className="playlistUserName">{loggedInUserName} </h5>
             {accountPopOut ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
           </div>
           {accountPopOut && (
@@ -163,7 +163,7 @@ function Playlist() {
                 <ExitToAppIcon />
               </p>
               <p>Profile</p>
-              <p>Logout</p>
+              <p onClick={userLogout}>Logout</p>
             </div>
           )}
         </div>
