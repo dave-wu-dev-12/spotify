@@ -1,6 +1,7 @@
 const initialState = {
   isLoggedIn: false,
   userName: "",
+  recentlyPlayed: [],
 };
 
 const reducer = (state = initialState, action) => {
@@ -20,6 +21,12 @@ const reducer = (state = initialState, action) => {
         ...state,
         isLoggedIn: false,
         userName: "",
+      };
+
+    case "store_recently_played":
+      return {
+        ...state,
+        recentlyPlayed: action.recentlyPlayed,
       };
 
     default:

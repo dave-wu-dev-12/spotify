@@ -4,8 +4,28 @@ import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import ImgAssets from "../assets/ImgAssets";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function RecentlyPlayed() {
+  const userRecentlyPlayedList = useSelector((state) => state.recentlyPlayed);
+
+  // Generate the view
+  let recentlyplayedAlbumHandle = null;
+  recentlyplayedAlbumHandle = userRecentlyPlayedList.map((item) => {
+    return (
+      <div className="playlistAlbumContainer">
+        <img src={item.imgSrc} alt="album" />
+        <span className="albumOverlay">
+          <PlayCircleOutlineIcon />
+          <span className="albumOverlay_artistName">{item.title}}</span>
+          <span className="albumOverlay_title">{item.title}</span>
+        </span>
+      </div>
+    );
+  });
+
+  console.log(userRecentlyPlayedList);
+
   return (
     <div className="recentlyPlayed_outerContainer">
       <div className="recentlyPlayed_contentContainer">
@@ -22,57 +42,7 @@ function RecentlyPlayed() {
             </Link>
           </div>
           <div className="playlistGrid_Container">
-            <div className="playlistAlbumContainer">
-              <img src={ImgAssets.albumImgFutureSrc} alt="album" />
-              <span className="albumOverlay">
-                <PlayCircleOutlineIcon />
-                <span className="albumOverlay_artistName">FUTURE</span>
-                <span className="albumOverlay_title">WIZRUD</span>
-              </span>
-            </div>
-            <div className="playlistAlbumContainer">
-              <img src={ImgAssets.albumImgGeazySrc} alt="album" />
-              <span className="albumOverlay">
-                <PlayCircleOutlineIcon />
-                <span className="albumOverlay_artistName">G-EAZY</span>
-                <span className="albumOverlay_title">TGIF</span>
-              </span>
-            </div>
-            <div className="playlistAlbumContainer">
-              <img src={ImgAssets.albumImgPrmreSrc} alt="album" />
-              <span className="albumOverlay">
-                <PlayCircleOutlineIcon />
-                <span className="albumOverlay_artistName">PARAMORE</span>
-                <span className="albumOverlay_title">rockCity</span>
-              </span>
-            </div>
-            <div className="playlistAlbumContainer">
-              <img src={ImgAssets.albumImgSelenagSrc} alt="album" />
-              <span className="albumOverlay">
-                <PlayCircleOutlineIcon />
-                <span className="albumOverlay_artistName">SELENA GOMER</span>
-                <span className="albumOverlay_title">My Bieber</span>
-              </span>
-            </div>
-            <div className="playlistAlbumContainer">
-              <img src={ImgAssets.albumImgZeddSrc} alt="album" />
-              <span className="albumOverlay">
-                <PlayCircleOutlineIcon />
-                <span className="albumOverlay_artistName">ZEDD</span>
-                <span className="albumOverlay_title">
-                  Clarity of the Darkest night in the land of darksied the one
-                  ruler
-                </span>
-              </span>
-            </div>
-            <div className="playlistAlbumContainer">
-              <img src={ImgAssets.albumImgWeekndSrc} alt="album" />
-              <span className="albumOverlay">
-                <PlayCircleOutlineIcon />
-                <span className="albumOverlay_artistName">THE WEEKND</span>
-                <span className="albumOverlay_title">TA hours</span>
-              </span>
-            </div>
+            {recentlyplayedAlbumHandle}
           </div>
         </div>
         <div className="recentlyPlayed_nextContianer">
