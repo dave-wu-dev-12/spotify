@@ -7,6 +7,13 @@ import styled, {
   createGlobalStyle,
 } from "styled-components";
 
+// global prop value
+const theme = {
+  primary: {
+    baseColor: "gray",
+  },
+};
+
 const Disclaimer = styled.p`
   font-size: 10px;
   transition: ease 0.5s all;
@@ -32,13 +39,6 @@ const DisclaimerContainer = styled.div`
   justify-content: center;
   padding: 1em;
 `;
-
-// global prop value
-const theme = {
-  primary: {
-    baseColor: "gray",
-  },
-};
 
 // global style values like the body etc
 const GlobalStyle = createGlobalStyle`
